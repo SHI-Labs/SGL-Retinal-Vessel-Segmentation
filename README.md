@@ -16,9 +16,10 @@ In this repository, we have prepared the raw dataset (DRIVE and CHASE_DB1) and t
 
 Download our repo:
 ```
-git clone https://github.com/SHI-Labs/Unsupervised-Domain-Adaptation-with-Differential-Treatment.git
-cd Unsupervised-Domain-Adaptation-with-Differential-Treatment
+git clone https://github.com/SHI-Labs/SGL-Retinal-Vessel-Segmentation.git
+cd SGL-Retinal-Vessel-Segmentation
 ```
+Prepare a PyTorch environment (>=1.3.1) and other necessary dependencies. 
 
 ## Training on DRIVE or CHASE_DB1
 
