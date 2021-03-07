@@ -39,5 +39,8 @@ cd sgl_training
 bash run_test.sh
 ```
 
+## Noisy Label Synthesis Pipeline (Vessel Label Erasing)
+Annotating the retinal vessels requires the involvement of professional clinicians, and the process of manual labeling is onerous, which reveals one of the reasons why public retinal vessel databases are always small-scale or partially-labeled. It is also common that some labels of thinner vessels are missing due to the annotators' errors. To resemble this practical situation in industry, we propose to synthesize an incomplete map by erasing some labeled vessel segments from the ground truth segmentation map. Please run the python notobook in the noisy_label_synthesis folder.
+
 ## Acknowledgements
 This project has been funded by the Jump ARCHES endowment through the Health Care Engineering Systems Center. This work also utilizes resources supported by the National Science Foundation’s Major Research Instrumentation program, grant number 1725729, as well as the University of Illinois at Urbana-Champaign.
