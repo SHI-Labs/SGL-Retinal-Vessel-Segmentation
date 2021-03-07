@@ -1,5 +1,5 @@
 # SGL-Retinal-Vessel-Segmentation
-This repository is the official PyTorch code for 'Study Group Learning: Study Group Learning: Improving Retinal Vessel Segmentation Trained with Noisy Labels'
+This repository is the official PyTorch code for the manuscript 'Study Group Learning: Improving Retinal Vessel Segmentation Trained with Noisy Labels'
 
 ## Introduction
 <div align="center">
