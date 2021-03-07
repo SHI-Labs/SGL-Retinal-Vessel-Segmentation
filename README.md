@@ -4,7 +4,7 @@ This repository is the official PyTorch code for 'Study Group Learning: Study Gr
 ## Introduction
 <div align="center">
   <img src="figs/model.png" width="100%">
-  Baseline model structure and the proposed Study Group Learning (SGL) scheme. The baseline network is a concatenated UNet consisting of an enhancement module and a segmentation module. The three-channel enhancement map Ie is obtained from the bottleneck structure. The SGL is inspired by the cross-validation training scheme and knowledge distillation idea. We first split the whole training set G into k subsets {Gk} and feed the model Mk with Gk. The obtained estimation of Gk is utilized as the pseudo labels for joint optimization.
+  Framework of Study Group Learning.
 </div>
 
 Retinal vessel segmentation from retinal images is an essential task for developing the computer-aided diagnosis system for retinal diseases. Efforts have been made on high-performance deep learning-based approaches to segment the retinal images in an end-to-end manner. However, the acquisition of retinal vessel images and segmentation labels requires onerous work from professional clinicians, which results in smaller training dataset with incomplete labels. As known, data-driven methods suffer from data insufficiency, and the models will easily over-fit the small-scale training data. Such a situation becomes more severe when the training vessel labels are incomplete or incorrect. In this paper, we propose a Study Group Learning (SGL) scheme to improve the robustness of the model trained on noisy labels. Besides, a learned enhancement map provides better visualization than conventional methods as an auxiliary tool for clinicians. Experiments demonstrate that the proposed method further improves the vessel segmentation performance in DRIVE and CHASE_DB1 datasets, especially when the training labels are noisy. 
@@ -48,13 +48,13 @@ Annotating the retinal vessels requires the involvement of professional clinicia
 
 <div align="center">
   <img src="figs/syn.png" width="100%">
-  Vessel label erasing process. Given the complete label map, we compute the skeleton of the vessels, and dilate the vessel skeleton to mask by drawing the polylines with width t. We then rank the vessel segments by their approximated thickness, and include the thick vessels according to ratio r. The second row shows one instance of label erasing with r from 1 to 0.3.
+  Vessel label erasing process. 
 </div>
 
 ## Quantitative Results on DRIVE and CHASE w/ or w.o./ Noisy Labels
 <div align="center">
   <img src="figs/sgl.png" width="100%">
-  The performance of the model in the simulated training set with label noise ratio $r=[1, 0.9, 0.7, 0.5]$. The proposed SGL learning scheme overall improves the robustness in all $K$. Left two columns: DICE and AUC scores on DRIVE. Right two columns: on CHASE$\_$DB1 dataset.
+  The proposed SGL learning scheme overall improves the robustness in all k. 
 </div>
 Erasing some vessel labels in the training set will drastically degrade the system performance, while the SGL learning scheme overall improves the robustness on both datasets. Among all the metrics, AUC does not relate to the thresholding method, indicating a better ability of the model segmenting vessel pixels. 
 
