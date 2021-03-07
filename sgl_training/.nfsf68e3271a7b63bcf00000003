@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0,1 python main.py --self_ensemble --model VNET --loss 1*BCE+1*DICE --data_train DRIVE --data_test DRIVET --n_GPUs 2 --epochs 400 --data_range '1-20/1-20' --save 0912_process_CLAHE --scale 1 --patch_size 256 --reset --save_gt --save_results
