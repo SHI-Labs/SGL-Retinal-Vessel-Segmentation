@@ -1,1 +1,47 @@
 # SGL-Retinal-Vessel-Segmentation
+This repository is the official PyTorch code for 'Study Group Learning: Study Group Learning: Improving Retinal Vessel Segmentation Trained with Noisy Labels'
+
+
+  <img src="Figs/idea.png" width="50%">
+</div>
+
+
+## Introduction
+
+Retinal vessel segmentation from retinal images is an essential task for developing the computer-aided diagnosis system for retinal diseases. Efforts have been made on high-performance deep learning-based approaches to segment the retinal images in an end-to-end manner. However, the acquisition of retinal vessel images and segmentation labels requires onerous work from professional clinicians, which results in smaller training dataset with incomplete labels. As known, data-driven methods suffer from data insufficiency, and the models will easily over-fit the small-scale training data. Such a situation becomes more severe when the training vessel labels are incomplete or incorrect. In this paper, we propose a Study Group Learning (SGL) scheme to improve the robustness of the model trained on noisy labels. Besides, a learned enhancement map provides better visualization than conventional methods as an auxiliary tool for clinicians. Experiments demonstrate that the proposed method further improves the vessel segmentation performance in DRIVE and CHASE$\_$DB1 datasets, especially when the training labels are noisy. 
+
+In this repository, we have prepared the raw dataset (DRIVE and CHASE_DB1) and the pretrained model of our paper. 
+
+## Prerequisites
+
+Download our repo:
+```
+git clone https://github.com/SHI-Labs/Unsupervised-Domain-Adaptation-with-Differential-Treatment.git
+cd Unsupervised-Domain-Adaptation-with-Differential-Treatment
+```
+
+## Training on DRIVE or CHASE_DB1
+
+### Stage 1: Preparing Pseudo-label for SGL
+(Optional) If you want to directly test the prepared pseudo-label obtained by SGL, we have prepared them in the dataset folder. Otherwise, you can run the following codes to generate your own Pseudo-labels again. Taking k=8 as an example:
+```
+cd sgl_labeling
+bash run_drive_k8.sh
+```
+
+### Stage 2: Training with the Pseudo-label
+If you generated the Pseudo-labels by yourself, copy the results in the testing folder to the dataset folder. Otherwise, you can directly run the following codes to train the model on our prepared Pseudo labels.
+```
+cd sgl_training
+bash run_train.sh
+```
+
+## Testing the model on the Pretrained Model
+We have prepared the pre-trained models for both datasets in the folder 'pretrained'. To replicate the results in the paper, directly run the following commands,
+```
+cd sgl_training
+bash run_test.sh
+```
+
+## Acknowledgements
+This project has been funded by the Jump ARCHES endowment through the Health Care Engineering Systems Center. This work also utilizes resources supported by the National Science Foundation’s Major Research Instrumentation program, grant number 1725729, as well as the University of Illinois at Urbana-Champaign.
