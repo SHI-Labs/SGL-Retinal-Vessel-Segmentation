@@ -3,7 +3,7 @@ This repository is the official PyTorch code for 'Study Group Learning: Study Gr
 
 ## Introduction
 <div align="center">
-  <img src="figs/model.pdf" width="100%">
+  <img src="figs/model.png" width="100%">
   Training framework
 </div>
 
@@ -46,7 +46,23 @@ bash run_test.sh
 ## Noisy Label Synthesis Pipeline (Vessel Label Erasing)
 Annotating the retinal vessels requires the involvement of professional clinicians, and the process of manual labeling is onerous, which reveals one of the reasons why public retinal vessel databases are always small-scale or partially-labeled. It is also common that some labels of thinner vessels are missing due to the annotators' errors. To resemble this practical situation in industry, we propose to synthesize an incomplete map by erasing some labeled vessel segments from the ground truth segmentation map. Please run the python notobook in the noisy_label_synthesis folder.
 
-## Results and Visualization
+<div align="center">
+  <img src="figs/syn.png" width="100%">
+  Training framework
+</div>
+
+## Quantitative Results on DRIVE and CHASE w/ or w.o./ Noisy Labels
+<div align="center">
+  <img src="figs/sgl.png" width="100%">
+  Training framework
+</div>
+Erasing some vessel labels in the training set will drastically degrade the system performance, while the SGL learning scheme overall improves the robustness on both datasets. Among all the metrics, AUC does not relate to the thresholding method, indicating a better ability of the model segmenting vessel pixels. 
+
+## Results and Visualization on DRIVE
+<div align="center">
+  <img src="figs/drive.png" width="100%">
+  Training framework
+</div>
 
 
 ## Acknowledgements
