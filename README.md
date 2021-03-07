@@ -2,6 +2,10 @@
 This repository is the official PyTorch code for 'Study Group Learning: Study Group Learning: Improving Retinal Vessel Segmentation Trained with Noisy Labels'
 
 ## Introduction
+<div align="center">
+  <img src="figs/model.pdf" width="100%">
+  Training framework
+</div>
 
 Retinal vessel segmentation from retinal images is an essential task for developing the computer-aided diagnosis system for retinal diseases. Efforts have been made on high-performance deep learning-based approaches to segment the retinal images in an end-to-end manner. However, the acquisition of retinal vessel images and segmentation labels requires onerous work from professional clinicians, which results in smaller training dataset with incomplete labels. As known, data-driven methods suffer from data insufficiency, and the models will easily over-fit the small-scale training data. Such a situation becomes more severe when the training vessel labels are incomplete or incorrect. In this paper, we propose a Study Group Learning (SGL) scheme to improve the robustness of the model trained on noisy labels. Besides, a learned enhancement map provides better visualization than conventional methods as an auxiliary tool for clinicians. Experiments demonstrate that the proposed method further improves the vessel segmentation performance in DRIVE and CHASE_DB1 datasets, especially when the training labels are noisy. 
 
