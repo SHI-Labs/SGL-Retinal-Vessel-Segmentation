@@ -1,5 +1,6 @@
 # SGL-Retinal-Vessel-Segmentation
 This repository is the official PyTorch code for the manuscript 'Study Group Learning: Improving Retinal Vessel Segmentation Trained with Noisy Labels' (Yuqian Zhou, Hanchao Yu, Humphrey Shi)
+[[Technical Report]](https://arxiv.org/abs/2103.03451)
 
 ## Introduction
 <div align="center">
