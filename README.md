@@ -68,6 +68,18 @@ Erasing some vessel labels in the training set will drastically degrade the syst
   Results and Visualization on DRIVE dataset.
 </div>
 
+## Citation
+If you think this repo and the manuscript helpful, please consider citing us.
+```
+@article{zhou2021study,
+  title={Study Group Learning: Improving Retinal Vessel Segmentation Trained with Noisy Labels},
+  author={Zhou, Yuqian and Yu, Hanchao and Shi, Humphrey},
+  journal={arXiv preprint arXiv:2103.03451},
+  year={2021}
+}
+```
 
 ## Acknowledgements
 This project has been funded by the Jump ARCHES endowment through the Health Care Engineering Systems Center. This work also utilizes resources supported by the National Science Foundation’s Major Research Instrumentation program, grant number 1725729, as well as the University of Illinois at Urbana-Champaign.
+
+
