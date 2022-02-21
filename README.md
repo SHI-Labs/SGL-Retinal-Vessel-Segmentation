@@ -2,8 +2,8 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/study-group-learning-improving-retinal-vessel/retinal-vessel-segmentation-on-drive)](https://paperswithcode.com/sota/retinal-vessel-segmentation-on-drive?p=study-group-learning-improving-retinal-vessel)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/study-group-learning-improving-retinal-vessel/retinal-vessel-segmentation-on-chase_db1)](https://paperswithcode.com/sota/retinal-vessel-segmentation-on-chase_db1?p=study-group-learning-improving-retinal-vessel)
 
-This repository is the official PyTorch code for the manuscript 'Study Group Learning: Improving Retinal Vessel Segmentation Trained with Noisy Labels' (Yuqian Zhou, Hanchao Yu, Humphrey Shi) @ International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI) 2021
-[[Technical Report]](https://arxiv.org/abs/2103.03451)
+This repository is the official PyTorch code for the paper 'Study Group Learning: Improving Retinal Vessel Segmentation Trained with Noisy Labels' (Yuqian Zhou, Hanchao Yu, Humphrey Shi) @ International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI) 2021
+[[Paper]](https://link.springer.com/chapter/10.1007/978-3-030-87193-2_6)
 
 ## Introduction
 <div align="center">
